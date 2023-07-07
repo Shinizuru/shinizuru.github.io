@@ -1,11 +1,8 @@
 import React from "react";
-import { useSelector } from "react-redux";
-import { selectData } from "../pages/homeSlice";
 import styled from "styled-components";
 // Data
-import { Blog } from "../data";
 // Icons
-import { Icon } from '@iconify/react';
+import { Icon } from "@iconify/react";
 
 const StyledSocialLinks = styled.div`
   a {
@@ -14,22 +11,28 @@ const StyledSocialLinks = styled.div`
 `;
 
 export default function SocialLinks() {
-  const { blog, html_url } = useSelector(selectData);
+
 
   return (
     <StyledSocialLinks>
       <a
-        href={html_url}
-        aria-label="Check out my GitHub profile."
+        target="_blank"
+        rel="noreferrer"
+        href={"https://twitter.com/Shinizuru"}
+        aria-label="Check out my Twitter profile."
         className="link-icons"
       >
-        <Icon icon="icomoon-free:github" />
+        <Icon icon="logos:twitter" />
       </a>
-      {blog && (
-        <a href={blog} aria-label="External link" className="link-icons">
-          {Blog}
-        </a>
-      )}
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href={"https://ko-fi.com/shinizuru"}
+        aria-label="Check out my Ko-fi profile."
+        className="link-icons"
+      >
+        <Icon icon="simple-icons:ko-fi" />
+      </a>
     </StyledSocialLinks>
   );
 }

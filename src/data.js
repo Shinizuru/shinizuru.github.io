@@ -6,7 +6,16 @@ import Logo from "./images/logo.svg";
 
 // Hero Images (add your images to the /images directory with the same names)
 import HeroLight from "./images/hero-light.jpg";
-import HeroDark from "./images/hero-dark.jpg";
+import HeroDark from "./images/back1.png";
+
+import Porto1 from "./images/porto1.jpg";
+import Porto2 from "./images/porto2.jpg";
+
+import Illust1 from "./images/illust1.jpg";
+import Illust2 from "./images/illust2.jpg";
+import Illust3 from "./images/illust3.jpg";
+import Illust4 from "./images/illust4.jpg";
+
 // If you change the import names above then you need to change the export names below
 export { HeroLight as Light };
 export { HeroDark as Dark };
@@ -15,7 +24,7 @@ export { HeroDark as Dark };
  **************************************************************
   Add your GitHub username (string - "YourUsername") below.
 */
-export const githubUsername = "Your GitHub username here";
+export const githubUsername = "Shinizuru";
 
 // Blog link icon - https://icon-sets.iconify.design/
 export const Blog = <Icon icon="ph:link-bold" />;
@@ -25,12 +34,14 @@ export const Blog = <Icon icon="ph:link-bold" />;
   Add a second paragraph for the about me section.
 */
 export const moreInfo =
-  "I enjoy learning about technology and helping others use it to improve their lives and be more productive. I built this site with React, React Bootstrap, Redux, and the GitHub REST API.";
+  "I am Shinizuru, an artist. I do live 2D models, illustration, emotes, and many more. ";
 
 /* Skills
  ************************************************************** 
   Add or remove skills in the SAME format below, choose icons here - https://icon-sets.iconify.design/
 */
+
+
 export const skillData = [
   {
     id: 1,
@@ -93,6 +104,36 @@ export const projectCardImages = [
   {
     name: "example-1",
     image: Logo,
+  },
+];
+
+export const portoImages = [
+  {
+    id: 1,
+    image: Porto1,
+  },
+  {
+    id: 2,
+    image: Porto2,
+  },
+];
+
+export const illustImages = [
+  {
+    id: 1,
+    image: Illust1,
+  },
+  {
+    id: 2,
+    image: Illust2,
+  },
+  {
+    id: 3,
+    image: Illust3,
+  },
+  {
+    id: 4,
+    image: Illust4,
   },
 ];
 
