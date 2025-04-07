@@ -27,7 +27,6 @@ export default function Home() {
         <AboutMe />
         <Tos />
         <Pricing />
-        <Sample />
        
       </main>
       <BackToTop home={"Home"} />
